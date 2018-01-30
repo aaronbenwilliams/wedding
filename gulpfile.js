@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
-    jshint = require('gulp-jshint'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
@@ -41,8 +40,6 @@ gulp.task('css', function () {
 gulp.task('js',function(){
   gulp.src('src/js/scripts.js')
     .pipe(sourcemaps.init())
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
     .pipe(header(banner, { package : package }))
     .pipe(gulp.dest('app/assets/js'))
     .pipe(uglify())
