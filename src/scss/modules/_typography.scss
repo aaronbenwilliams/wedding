@@ -1,10 +1,13 @@
-@font-face {
-  font-family: 'Font-Name';
-  src: url('../fonts/font-name.eot');
-  src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/font-name.woff') format('woff'),
-       url('../fonts/font-name.ttf') format('truetype'),
-       url('../fonts/font-name.svg#font-name') format('svg');
+@import url('https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|VT323');
+
+body {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+span {
+  font-family: 'VT323', monospace;
   font-weight: normal;
   font-style: normal;
 }
