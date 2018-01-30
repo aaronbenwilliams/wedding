@@ -1,10 +1,15 @@
 .header {
-  height: 100vh;
+  height: auto;
   background: url('/assets/img/header/bkg.jpg') no-repeat top left;
   background-size: cover;
-}
-.logo {
-  margin: 0 auto;
-  display: block;
-  padding-top: 40px;
+  padding-bottom: 80px;
+  .logo {
+    margin: 0 auto;
+    display: block;
+    padding: 40px;
+    max-width: 649px;
+    img {
+      width: 100%;
+    }
+  }
 }

@@ -15,7 +15,7 @@
 
 html {
   font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+  background: radial-gradient(ellipse at center, #685C79 0, #1d1a22 80%, #040405 100%); }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
@@ -393,17 +393,46 @@ textarea {
   /* 2 */ }
 
 .header {
-  height: 100vh;
+  height: auto;
   background: url("/assets/img/header/bkg.jpg") no-repeat top left;
-  background-size: cover; }
-
-.logo {
-  margin: 0 auto;
-  display: block;
-  padding-top: 40px; }
+  background-size: cover;
+  padding-bottom: 80px; }
+  .header .logo {
+    margin: 0 auto;
+    display: block;
+    padding: 40px;
+    max-width: 649px; }
+    .header .logo img {
+      width: 100%; }
 
 .nav ul {
   list-style: none; }
+
+ul#countdown {
+  display: block;
+  width: 33%;
+  margin: 0 auto;
+  padding-left: 0; }
+  ul#countdown li {
+    color: white;
+    margin: 0 -3px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+    font-size: 72px;
+    text-align: center; }
+    ul#countdown li .label {
+      color: #685C79;
+      font-size: 18px;
+      text-transform: uppercase; }
+
+@media only screen and (max-width: 1024px) {
+  ul#countdown {
+    width: 50%; }
+    ul#countdown li {
+      font-size: 50px; }
+      ul#countdown li .label {
+        font-size: 13px; } }
 
 body {
   font-family: 'Sue Ellen Francisco', cursive;
