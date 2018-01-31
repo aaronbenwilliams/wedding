@@ -1,3 +1,80 @@
 .main {
-
+  .panel-who {
+    background: url('/assets/img/who/bkg.png') repeat;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align:bottom;
+    }
+    .text {
+      max-width: 726px;
+      padding: 20% 20px 20px;
+    }
+  }
+  .panel-where {
+    background: $yellow;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align:bottom;
+    }
+    .clicky {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        right: -210px;
+        top: 50%;
+        height: 58px;
+        width: 208px;
+        display: block;
+        background-image: url('/assets/img/where/clickthis.svg');
+        background-repeat: no-repeat;
+      }
+      &:hover:after {
+        background-image: url('/assets/img/where/clickthis-hover.svg');
+      }
+    }
+    .text {
+      max-width: 701px;
+      padding: 25% 20px 20px;
+    }
+  }
+  .panel-you {
+    background: url('/assets/img/who/bkg.png') repeat;
+    text-align: center;
+    padding: 70px 0;
+    @media only screen and (max-width: 750px) {
+      padding: 70px 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .text {
+      padding-bottom: 40px;
+      width: 90%;
+    }
+    .signoff {
+      text-align: right;
+      padding-right: 40px;
+      img {
+        max-width: 160px;
+        padding-top: 40px;
+      }
+      @media only screen and (max-width: 500px) {
+        img {
+          padding-top: 15px;
+        }
+      }
+    }
+    .us {
+      text-align: left;
+      img {
+        max-width: 269px;
+      }
+    }
+  }
 }

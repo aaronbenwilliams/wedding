@@ -1,3 +1,86 @@
 .footer {
+  background: $yellow;
+  text-align: center;
+  padding: 70px 0 10px;
+  .text {
+    width: 90%;
+    height: auto;
+  }
+  .copy {
+    color: $yellow-dark;
+    padding-top: 50px;
+    display: block;
+  }
+}
 
+#HCB_comment_box {
+  font-size: 22px;
+  padding: 20px;
+  h3 {
+    display: none;
+  }
+  input[type="text"], input[type="submit"], textarea {
+    width: 100%;
+    background: $yellow;
+    padding: 7px;
+    border: 3px solid $yellow-dark;
+    border-radius: 6px;
+    color: $base;
+    margin-bottom: 10px;
+    &::placeholder {
+      color: #AE7834;
+      padding: 7px;
+    }
+    &:focus {
+      border-color: #84749A;
+      outline: none;
+    }
+  }
+  input[type="submit"] {
+    width: 25%;
+    float: left;
+    background: $yellow-dark;
+    padding-bottom: 3px;
+    color: $yellow;
+    &:hover {
+      background: $base;
+      cursor: pointer;
+      border-color: $base;
+    }
+  }
+  #comments_list {
+    color: $base;
+  }
+  a {
+    color: $yellow !important;
+    text-shadow: none !important;
+    &:hover {
+      color: $darken;
+    }
+    cursor: default;
+  }
+  .hcb-comment-tb {
+    display: none;
+  }
+  span {
+    font-size: 12px;
+  }
+  blockquote {
+    text-align: left;
+  }
+  .gravatar {
+    padding-right: 10px !important;
+  }
+  .home-desc {
+    display: none;
+  }
+  label {
+    display: none !important;
+  }
+  .comment {
+    text-align: left;
+  }
+  .admin-link {
+    opacity: 0;
+  }
 }
